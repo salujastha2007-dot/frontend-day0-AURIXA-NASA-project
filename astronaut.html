@@ -2,28 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronaut Profile</title>
+    <style>
+        /* CSS Basics: Body & Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b3d91; /* NASA Navy Blue */
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Profile Card Layout */
+        .profile-card {
+            background-color: #162b4d;
+            border: 2px solid #0056b3;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        /* Titles & Headings */
+        h1 {
+            color: #4da6ff;
+            font-size: 22px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 14px;
+            color: #a0c4ff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #0056b3;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        /* Astronaut Image Styling */
+        .astronaut-img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #4da6ff;
+            margin: 15px 0;
+            object-fit: cover;
+        }
+
+        /* Info & Bio Details */
+        .info-group {
+            text-align: left;
+            background-color: #0d1b2a;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .info-group p {
+            margin: 6px 0;
+            font-size: 15px;
+            color: #e0e6ed;
+        }
+
+        .info-group strong {
+            color: #4da6ff;
+        }
+
+        /* Quote Styling */
+        blockquote {
+            font-style: italic;
+            color: #b0c4de;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 15px 0;
+            padding: 10px 15px;
+            border-left: 4px solid #4da6ff;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Mission Status & Description */
+        .status-box {
+            background-color: #1e3a5f;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #ffd166;
+        }
+
+        /* Start Mission Button Styling */
+        .btn-start {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        .btn-start:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 <body>
-    <h1>AURIXA - Junior Astronaut Mission Trainer</h1>
-    
-    <h2>ASTRONAUT PROFILE</h2>
-    <h3>Alex</h3>
-    
-    <p><strong>Age:</strong> 28</p>
-    <p><strong>Mission:</strong> Moon Explorer</p>
-    <p><strong>Destination:</strong> Moon</p>
-    
-    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=400" alt="Alex the Astronaut" width="250">
-    
-    <blockquote>
-        "Small steps on the Moon, big steps for your future."
-        <br>- Alex
-    </blockquote>
-    
-    <h3>Mission:</h3>
-    <p>Explore the lunar surface and collect important scientific information about the Moon.</p>
-    
-    <button id="view-mission-btn" class="btn">View Mission</button>
+
+    <div class="profile-card">
+        <h1>AURIXA</h1>
+        <h2>Junior Astronaut Mission Trainer</h2>
+
+        <h3>Alex</h3>
+        
+        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=400" alt="Alex the Astronaut" class="astronaut-img">
+
+        <div class="info-group">
+            <p><strong>Age:</strong> 28</p>
+            <p><strong>Mission:</strong> Moon Explorer</p>
+            <p><strong>Destination:</strong> Moon</p>
+        </div>
+
+        <blockquote>
+            "Small steps on the Moon, big steps for your future."
+            <br>- Alex
+        </blockquote>
+
+        <div class="info-group">
+            <p><strong>Mission Description:</strong></p>
+            <p>Explore the lunar surface and collect important scientific information about the Moon.</p>
+        </div>
+
+        <div class="status-box">
+            Mission Status: Ready for Launch
+        </div>
+
+        <button id="view-mission-btn" class="btn-start">Start Mission</button>
+    </div>
+
 </body>
 </html>
